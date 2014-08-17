@@ -20,6 +20,8 @@ A query like *.txt hits on 100 million docIds, to hold these 100 million 8 bytes
 
 Its necessary to chunk these numbers into smaller manageable segments which system can possibly. To further reduce the memory presure they can be stored in delta compressed form. Typical memory requirement go down to around 1/6 times with this approach.
 
-TODO:
 
-Find a feasible way to reverse iterate on this
+TODO:
+Improve random access time for both forward and reverse iterations
+   - Can be done using skip lists, but will add a lot of overhead
+   
